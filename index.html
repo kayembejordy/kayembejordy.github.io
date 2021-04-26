@@ -1,4 +1,224 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mon Portfolio</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>J</span>ordy <span>K</span>ayembe</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#competence" data-after="competence">competence</a></li>
+            <li><a href="#Projet" data-after="Projet">Projet</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#Veille technologique" data-after="Veille technologique">Veille technologique</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
 
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>je m'appelle <span></span></h1>
+        <h1>Jordy <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="competence">
+      <!-- competence -->
+      <h2 class="section-title" >competence</h2>
+<div class="row">
+  <div class="column1">
+    <img src="img/image1.png" alt="Elaboration" onclick="myFunction(this);">
+    <span>Elaboration</span>
+  </div>
+  <div class="column1">
+    <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column1">
+    <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column1">
+    <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container1">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<!-- fin de competence -->
+</section>
+
+
+
+  <!-- End Service Section -->
+  <section id="Projet">
+  <h2 class="section-title" > Mes Projets</h2>
+  <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Dossier e4 ppe</button>
+  <button class="btn" onclick="filterSelection('nature')"> Dossier e6 stage</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <a href="E4 ppe/documentation projet.otd" target="_blank" class="cta">e4</a>
+      <p>documentation E4</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <a href="E6 stage/stage.otd" target="_blank" class="cta">e6</a>
+        <p>documentation E6</p>
+      </div>
+    </div>
+
+  
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</section>
+<!-- End Projects Section -->
+
+<!--Bouton E4 et E6-->
+ <div id="Veille technologique">
+  <section id="Projet">
+    <h2 class="section-title" > Ma veille technologique</h2>
+    <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Veille technologique</button>
+ </div>
+ <!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <a href="E4 ppe/documentation projet.otd" target="_blank" class="cta">e4</a>
+      <p>documentation E4</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <a href="E6 stage/stage.otd" target="_blank" class="cta">e6</a>
+        <p>documentation E6</p>
+      </div>
+    </div>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/geek.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">A pro<span>pos</span></h1>
+        <h2> Developpement Web font et end</h2>
+        <p>Bonjour c'est Jordy bienvenue sur mon potfolio je suis développeur Web  </p>
+        <a href="cv/CV-Bts-sio-kayembe.pdf" target="_blank" class="cta">Telecharge Mon Cv</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+076177...</h2>
+            <h2>+076177...</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>kayembe.jordy@gmail.com</h2>
+            <h2>kayembe.jordy@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Addresse</h1>
+            <h2>Paris, France</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>S</span>haif <span>A</span>rfan</h1></div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Jordy. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
 </html>
